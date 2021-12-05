@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Corona Testing</title>
+  <!-- link stylesheet file -->
+  <link rel="stylesheet" href="./stylesheets/formStyle.css">
+</head>
+
+<body>
+  <!-- Navigation Bar with menu items -->
+  <div id="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="coronatesting.html">Corona Testing</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Heading on top of the form -->
+  <div class="regform">
+    <h1>Information Form</h1>
+  </div>
+
+  <!-- Main form -->
+  <div class="main">
+    <form id="testForm">
+      <!-- input elements of the form -->
+      <div id="name">
+        <h2 class="name">Name</h2>
+        <input id="firstname" type="text" required name="first_name"><br>
+        <label id="firstlabel"> first name</label>
+        <!-- add input and label for last name -->
+        <input id="lastname" type="text" required name="last_name"><br>
+        <label id="lastlabel"> last name</label>
+
+      </div>
+     <h2  class="name">Email</h2>
+    <input type="email" name="email" id="email"> 
+
+    <h2  class="name">Profession</h2>
+    <input type="text" name="Profession" id="profession">
+
+    <h2  class="name">Date of birth</h2>
+    <input type="date" name="dateofbirth" id="dateofbirth">
+
+    <h2  class="name">Phone number</h2>
+    <input type="text" name="mobile" id="mobile">
+
+    <h2  class="name">State</h2>
+    <select name="State" id="state"> 
+      
+      <option > Punjab </option>
+      <option > up </option>
+      <option > assam </option>
+      <option > delhi </option>
+
+    </select>      
+    <h2  class="Travel">Have you travelled covid affected palces.</h2>
+    <div id="travel">
+    <input type="radio" name="option" value="Yes"> Yes
+    <input type="radio" name="option" value="No" checked="checked"> No
+  </div>
+
+  <h2  class="symptoms">State</h2>
+  <div class="arrange">
+    <input type="checkbox" name="symptoms" id="cb1" value="fever">
+    <label for="cb1"></label> <br>
+
+    <input type="checkbox" name="symptoms" value="Dry Cough" id="cb2">
+        <label for="cb2">Dry Cough</label><br>
+        <input type="checkbox" name="symptoms" value="Cold" id="cb3">
+        <label for="cb3">Cold</label><br>
+        <input type="checkbox" name="symptoms" value="Breathing Issues" id="cb4">
+        <label for="cb3">Breathing Issues</label><br>
+        <input type="checkbox" name="symptoms" value="Chest Pain" id="cb5">
+        <label for="cb3">Chest Pain</label><br>
+
+        
+
+
+  </div>
+
+  <input type="submit" id="submit">
+      <!-- add more form elements here -->
+
+
+    </form>
+  </div>
+
+  <!-- add script files -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+  <!-- add script files -->
+  <script src="script/t.js"></script>
+
+</body>
+
+</html>
